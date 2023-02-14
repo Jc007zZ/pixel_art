@@ -9,10 +9,22 @@
 </head>
 <body>
     <header>
+        <div class="cor" >
         <div class="cubo" id="branco" onclick="cor('white')" ></div>
-        <div class="cubo" id="black" onclick="cor('black')"></div>
+        <div class="cubo" id="black" onclick="cor('black')"  ></div>
+    </div>
         <button onclick="limpar()">Limpar</button>
+
+        <div class="escolherCor">
+            <button onclick="criarCor()" id="enviarCor" >enviar</button>
+            <input type="color" id="criarCor" >
+        </div>
+        
+
+    <div class="corSelecionada">
         <div class="cubo" id="cor"></div>
+        <p>Cor escolhida</p>
+    </div>
     </header>
    
     <main class="quadro">

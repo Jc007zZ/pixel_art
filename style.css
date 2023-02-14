@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(56, 48, 48);
     width: 99vw;
     height: 99vh;
     justify-content: center;
@@ -19,6 +20,7 @@ body {
 header {
     display: flex;
     justify-content: center;
+    gap: 10px;
     width: 99vw;
     height: 100px;
     margin-bottom: 50px;
@@ -30,7 +32,7 @@ main {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(17, 1fr);
-grid-template-rows: repeat(17, 1fr);
+    grid-template-rows: repeat(17, 1fr);
 }
 
 .cubo {
@@ -38,6 +40,8 @@ grid-template-rows: repeat(17, 1fr);
     height: 30px;
     background-color: white;
     border: 1px solid blue;
+    cursor: hidden;
+
 }
 
 button {
@@ -46,4 +50,29 @@ button {
 
 #black {
     background-color: black;
+}
+
+.cor {
+    border: 1px solid white;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+}
+
+.corSelecionada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: fit-content;
+}
+
+.escolherCor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: fit-content;
 }
